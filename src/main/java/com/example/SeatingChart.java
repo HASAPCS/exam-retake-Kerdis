@@ -10,8 +10,8 @@ public class SeatingChart {
         // Your Implementation here
         int count = 0;
         seats = new Student [rows][cols];
-        for (int i = 0; i > seats.length; i++) {
-            for (int j = 0; j > seats[i].length; j++) {
+        for (int i = 0; i <  cols; i++) {
+            for (int j = 0; j < rows; j++) {
                 if (studentList.size() > count) {
                     seats[j][i] = studentList.get(count);
                     count++;
